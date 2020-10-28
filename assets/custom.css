@@ -1,0 +1,84 @@
+/* _coverpage.md */
+section.cover.show:before {
+  background: rgb(25, 56, 93) !important;
+}
+section.cover {
+	color: #FFF;
+}
+section.cover p:last-child a {
+	border: none !important;
+	background: rgba(255, 255, 255, 0.1) !important;
+	color: #FFF !important;
+}
+section.cover p:last-child a:first-child {
+	color: #222 !important;
+	background: #FFF !important;
+}
+
+
+/* other pages */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold !important;
+}
+
+article#main h4,
+article#main h5,
+article#main h6 {
+	font-size: var(--heading-h4-font-size);
+}
+
+h1 b:before,
+h2 b:before,
+h3 b:before,
+h4 b:before,
+h5 b:before,
+h6 b:before {
+	content: '*';
+	color: rgb(202, 114, 114);
+}
+
+.markdown-section ol ol,
+.markdown-section ul ol {
+	list-style-type: lower-alpha;
+}
+
+.markdown-section ol ol ol,
+.markdown-section ul ol ol {
+	list-style-type: lower-roman;
+}
+
+.markdown-section strong + .emoji {
+	width: 1em;
+}
+
+article#main a {
+	font-weight: bold;
+	color: var(--blockquote-color);
+}
+
+
+
+/* responsive video */
+.mbwrapper {
+	position: relative;
+	padding-bottom: calc(var(--aspect-ratio, .5625) * 100%);
+	height: 0;
+}
+.mbwrapper iframe,
+.mbwrapper video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+.sidebar-nav li > a {
+	white-space: normal;
+}
+
+.sidebar-nav ul ul .active > a {
+	background-color: rgba(0,0,0,0.1) !important;
+}

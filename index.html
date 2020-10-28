@@ -1,10 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>MotherFudgingProxies</title>
 
-<head>
-    <title></title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+		<!-- add: stylesheets -->
+		<link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+		<link rel="stylesheet" href="assets/custom.css">
 </head>
 
-	<body>
-	</body>
+<body style="width: 100vw; height: 100vh; overflow: hidden;">
+	<div id="app"></div>
+
+	<script>
+	// docsify.js settings
+	window.$docsify = {
+
+		// on TOC change scroll to top
+		auto2top: true,
+
+		// cover page doc
+		coverpage: false,
+
+		// use a TOC sidebar
+		hideSidebar: true,
+		loadSidebar: false,
+		loadNavbar: true,
+
+		// relative urls
+		relativePath: false,
+
+		// site theme
+		// themeColor: 'rgba(52,73,94,1)',
+
+		// load _404.md
+		notFoundPage: true,
+
+		// formatted dates
+		formatUpdated: '{DD}/{MM}/{YYYY} {HH}:{mm}',
+
+		// custom: footer in sidebar
+		autoFooter: {
+			name: 'Mark Battistella',
+			url: 'https://github.com/markbattistella',
+			copyYear: '2013',
+			policy: true,
+			terms: true,
+			cookies: true
+		},
+
+		// tabs
+		tabs: {
+			sync: true,
+			theme: 'material',
+		}
+	}
+	</script>
+
+	<!-- add: docsify -->
+	<script src="https://cdn.jsdelivr.net/npm/docsify@latest"></script>
+
+	<!-- add more emojis -->
+	<script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+
+	<!-- docsify-tabs (latest v1.x.x) -->
+	<script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+
+	<!-- mbSidebarFooter -->
+	<script src="https://cdn.jsdelivr.net/npm/@markbattistella/docsify-sidebarfooter"></script>
+
+</body>
 </html>

@@ -1,0 +1,38 @@
+# title of the workflow
+name: Submission Validator
+
+# what event triggers this workflow
+# only changes to *.md files in /section/
+on:
+  push:
+    paths:
+      - '*.md'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+
+  # job #1
+  markdown-linter:
+    name: "Markdown Lint"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Markdown Lint
+        uses: ruzickap/action-my-markdown-linter@v1
+        with:
+          config_file: .markdownlint.yml
+          search_paths: |
+            section/
+
+  # job #2
+  markdown-link-check:
+    name: "Link Checker"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          use-quiet-mode: 'yes'
+          use-verbose-mode: 'yes'
+          config-file: 'mlc_config.json'
+          check-modified-files-only: 'no'
