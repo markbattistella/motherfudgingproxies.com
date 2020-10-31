@@ -12,35 +12,54 @@
 		<link rel="stylesheet" href="assets/custom.css">
 </head>
 
-<body style="width: 100vw; height: 100vh; overflow: hidden;">
+<body>
 	<div id="app"></div>
 
+	<!-- <footer style="position: fixed;bottom: 0;left: 0;right: 0;background: rgba(0,0,0,0.3);">
+	  <div style="max-width: var(--content-max-width);margin: 0 auto;">
+		  <div id="mb-footer"></div>
+	  </div>
+	</footer> -->
+	
 	<script>
 	// docsify.js settings
 	window.$docsify = {
 
-		// on TOC change scroll to top
-		auto2top: true,
+		// repo
+		repo: 'markbattistella/motherfudgingproxies.com',
 
-		// cover page doc
-		coverpage: false,
+		// cover page
+		coverpage: 'site/cover.md',
 
-		// use a TOC sidebar
-		hideSidebar: true,
-		loadSidebar: false,
-		loadNavbar: false,
+		// load the navigation bar
+		loadNavbar: 'site/navigation.md',
 
-		// relative urls
-		relativePath: false,
-
-		// site theme
-		// themeColor: 'rgba(52,73,94,1)',
+		// home page
+		homepage: 'site/home.md',
 
 		// load _404.md
-		notFoundPage: true,
+		notFoundPage: 'site/404.md',
+
+		// on page change scroll to top
+		auto2top: true,
+
+		// relative urls
+		relativePath: true,
+
+		// site theme
+		themeColor: '#6e529d',
 
 		// formatted dates
 		formatUpdated: '{DD}/{MM}/{YYYY} {HH}:{mm}',
+
+
+		// use a sidebar
+		loadSidebar: false,
+		hideSidebar: true,
+
+		// max TOC levels
+		maxLevel: 3,
+
 
 		// custom: footer in sidebar
 		autoFooter: {
