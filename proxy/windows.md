@@ -1,11 +1,18 @@
-control panel
+# Windows
 
-settings app
+## Standard way
 
+### Control Panel
 
+### Settings App
 
-apps
-> charles
+## Helpers
+
+### SquidMan
+
+### Charles
+
+## Other pages
 
 [View macOS proxy settings](/proxy/macos ':class=mb-button')
 [View Linux proxy settings](/proxy/linux ':class=mb-button')

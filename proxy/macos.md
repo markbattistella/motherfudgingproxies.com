@@ -1,9 +1,16 @@
-system preferences
+# macOS
 
-> squid man
+## Standard way
 
-> charles
+### System Preferences
 
+## Helpers
+
+### SquidMan
+
+### Charles
+
+## Other pages
 
 [View Windows proxy settings](/proxy/windows ':class=mb-button')
 [View Linux proxy settings](/proxy/linux ':class=mb-button')

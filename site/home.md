@@ -1,4 +1,4 @@
-# Proxies, uh
+# Proxies, ugh
 
 If you've ever worked in a corporate environment where you need to authenticate against a proxy server you know one thing for sure - they **suck**.
 

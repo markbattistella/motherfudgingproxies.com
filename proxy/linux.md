@@ -1,14 +1,20 @@
-ubuntu
+# Linux
 
-fedora
+## Ubuntu
 
-redhat
+## Fedora
 
-yum
+## Redhat
 
-dnf
+- yum
+- dnf
 
+## CentOS
 
+- yum
+- dnf
+
+## Other pages
 
 [View Windows proxy settings](/proxy/windows ':class=mb-button')
 [View macOS proxy settings](/proxy/macos ':class=mb-button')
