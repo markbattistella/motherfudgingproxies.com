@@ -102,6 +102,11 @@ article#main a {
 }
 
 
+img {
+	max-width: 40em !important;
+	border-radius: 1em;
+}
+
 /* buttons */
 a.mb-button {
 	position: relative;
