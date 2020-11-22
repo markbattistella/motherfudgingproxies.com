@@ -34,7 +34,13 @@ Usually when you configure one of the places for proxies in Windows it does filt
 
  ![](../assets/windows/image05.jpg)
 
-1. If you need to specify separate proxy addresses for each of the protocols you can do that here, or if you need to bypass other IP addresses or domains you can do it at the bottom too
+1. Specify separate proxy addresses for each of the protocols if you need to, otherwise press `OK`
+
+1. Open Internet Explorer (_yes_ it has to be this) and log in with your proxy credentials
+
+ ![](../assets/windows/image06.jpg)
+
+ ?> You have to use Internet Explorer as this is the default tunnelling application on Windows. When you launch Chrome or Firefox or another app, they will prompt you again for their own authentication, but anything using the internal proxy settings channels Internet Explorer
 
 ### Settings App
 
@@ -50,21 +56,36 @@ When using these apps the above Windows settings for proxy should be configured 
 
 1. Open the app
 
+ ![](../assets/windows/image30.jpg)
+
 1. Stop the recording and clear the session
 
-1. Open the preferences `CMD + ,` and under `Launch` uncheck the `Open new session` and press `OK`
+ ![](../assets/windows/image31.jpg)
 
-1. From the menubar, turn on `macOS Proxy`
+1. Open the preferences `CTRL + ,` and under `Launch` uncheck the `Open new session` and press `OK`
+
+ ![](../assets/windows/image32.jpg)
 
 1. From the menubar, open up the `Proxy Settings...`
 
+ ![](../assets/windows/image33.jpg)
+
 1. Set the port that the device will use to connect (this example I'm using the same port as the proxy `3128`)
 
-1. Under the `macOS` tab that all the options are checked
+ ![](../assets/windows/image34.jpg)
+
+1. Under the `Windows` tab that all the options are checked
+
+ ![](../assets/windows/image35.jpg)
 
 1. From the menubar, open up the `External Proxy Settings...`
 
+ ![](../assets/windows/image36.jpg)
+
 1. Check the `Use external proxy servers` option and fill in the HTTP and HTTPS settings
+
+ ![](../assets/windows/image37.jpg)
+ ![](../assets/windows/image38.jpg)
 
 1. Press `OK`
 
