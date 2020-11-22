@@ -65,9 +65,80 @@
 
 ## Helpers
 
+Helper apps are really good at tunnelling all the network traffic into the localhost and then sending it through to the external proxy server.
+
+When using these apps the above macOS settings for proxy should be configured to the localhost or `127.0.0.1` and whatever port you use from the app (`3128` in these examples).
+
 ### [SquidMan](https://squidman.net/squidman/)
 
+1. Open the app
+
+ ![](../assets/macOS/image14.jpg)
+
+1. Open the preferences `CMD + ,`
+
+1. Under `General`, set the port that the device will use to connect (this example I'm using the same port as the proxy `3128`)
+
+ ![](../assets/macOS/image15.jpg)
+
+1. Go to the `Parent` tab, and if you use multiple locations select the one from the sidebar and enter the proxy settings.
+
+ ![](../assets/macOS/image16.jpg)
+
+ ?> This is my favourite thing about SquidMan - I have a "home" location for wifi, and then a "proxy" wifi
+
+1. If you need to share your internet proxy tunnelling to others that can install or are mobile devices then you have the ability to limit the access
+
+ ![](../assets/macOS/image17.jpg)
+
+1. `Save` the settings, and then press `Start Squid` to start tunnelling
+
+ ![](../assets/macOS/image18.jpg)
+ ![](../assets/macOS/image19.jpg)
+
 ### [Charles Proxy](https://www.charlesproxy.com)
+
+!> Charles proxy debugging is not supposed to be used for network tunnelling, but it works as a by-product. As a result, leaving it on 24/7 means most of your device's resources get eaten up by the session recorder. This shows you how to turn it off
+
+1. Open the app
+
+ ![](../assets/macOS/image20.jpg)
+ ![](../assets/macOS/image21.jpg)
+
+1. Stop the recording and clear the session
+
+ ![](../assets/macOS/image22.jpg)
+
+1. Open the preferences `CMD + ,` and under `Launch` uncheck the `Open new session` and press `OK`
+
+ ![](../assets/macOS/image23.jpg)
+
+1. From the menubar, turn on `macOS Proxy`
+
+ ![](../assets/macOS/image24.jpg)
+
+1. From the menubar, open up the `Proxy Settings...`
+
+ ![](../assets/macOS/image25.jpg)
+
+1. Set the port that the device will use to connect (this example I'm using the same port as the proxy `3128`)
+
+ ![](../assets/macOS/image26.jpg)
+
+1. Under the `macOS` tab that all the options are checked
+
+ ![](../assets/macOS/image27.jpg)
+
+1. From the menubar, open up the `External Proxy Settings...`
+
+ ![](../assets/macOS/image28.jpg)
+
+1. Check the `Use external proxy servers` option and fill in the HTTP and HTTPS settings
+
+ ![](../assets/macOS/image29.jpg)
+ ![](../assets/macOS/image30.jpg)
+
+1. Press `OK`
 
 ### iOS / iPad OS
 

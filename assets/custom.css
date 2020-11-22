@@ -104,7 +104,7 @@ article#main a {
 
 img {
 	max-width: 40em !important;
-	border-radius: 1em;
+	border-radius: .6em;
 }
 
 /* buttons */
@@ -132,4 +132,12 @@ a.mb-button:after {
 	text-align: center;
 	background: rgba(0, 0, 0, 0.3);
 	border-radius: var(--cover-button-border-radius);
+}
+
+
+
+#main a[target="_blank"]:after {
+	content: "\29C9";
+	display: inline-block;
+	margin-left: 5px;
 }
