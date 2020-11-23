@@ -44,6 +44,22 @@ Usually when you configure one of the places for proxies in Windows it does filt
 
 ### Settings App
 
+1. Open the `Start` menu and search for `Settings` and open it
+
+ ![](../assets/windows/image07.jpg)
+
+1. In the Settings app, search for **proxy** and select `Change proxy settings`
+
+ ![](../assets/windows/image08.jpg)
+
+1. Under proxy, turn on `Use a proxy server` and enter the proxy details
+
+ ![](../assets/windows/image09.jpg)
+
+1. Press `Save` - or else your details won't work
+
+?> Sometimes you need to open Internet Explorer and authenticate, sometimes you don't and it will ask when you open the desired app. Sometimes you can use Edge, sometimes you can't. Microsoft, right?
+
 ## Helpers
 
 Helper apps are really good at tunnelling all the network traffic into the localhost and then sending it through to the external proxy server.
@@ -56,38 +72,56 @@ When using these apps the above Windows settings for proxy should be configured 
 
 1. Open the app
 
- ![](../assets/windows/image30.jpg)
+ ![](../assets/windows/image10.jpg)
 
 1. Stop the recording and clear the session
 
- ![](../assets/windows/image31.jpg)
+ ![](../assets/windows/image11.jpg)
 
 1. Open the preferences `CTRL + ,` and under `Launch` uncheck the `Open new session` and press `OK`
 
- ![](../assets/windows/image32.jpg)
+ ![](../assets/windows/image12.jpg)
 
 1. From the menubar, open up the `Proxy Settings...`
 
- ![](../assets/windows/image33.jpg)
+ ![](../assets/windows/image13.jpg)
 
 1. Set the port that the device will use to connect (this example I'm using the same port as the proxy `3128`)
 
- ![](../assets/windows/image34.jpg)
+ ![](../assets/windows/image14.jpg)
 
 1. Under the `Windows` tab that all the options are checked
 
- ![](../assets/windows/image35.jpg)
+ ![](../assets/windows/image15.jpg)
 
 1. From the menubar, open up the `External Proxy Settings...`
 
- ![](../assets/windows/image36.jpg)
+ ![](../assets/windows/image16.jpg)
 
 1. Check the `Use external proxy servers` option and fill in the HTTP and HTTPS settings
 
- ![](../assets/windows/image37.jpg)
- ![](../assets/windows/image38.jpg)
+ ![](../assets/windows/image17.jpg)
+ ![](../assets/windows/image18.jpg)
 
 1. Press `OK`
+
+### AndroidOS
+
+I know that Android and Windows aren't the same but hey, for now they are.
+
+There's no real consistent Android proxy setting way of doing things because all the various flavours, but this is a _semi_-example:
+
+1. Go to the Settings app
+
+1. Go to the Wifi options
+
+1. **Press and hold** on the preferred wifi and select `Modify Network`
+
+1. Select `Advanced`
+
+1. Select `Manual`
+
+1. Enter your proxy details and press `Save`
 
 ## Other pages
 

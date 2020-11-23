@@ -33,6 +33,11 @@ section.cover h1:hover span span:before {
 	content: "F#%&ing";
 }
 
+section.cover p:last-child a.funding {
+	background: none !important;
+	padding: 0 !important;
+	margin: 0 1em 0 0 !important;
+}
 
 /* other pages */
 h1, h2, h3, h4, h5, h6 {

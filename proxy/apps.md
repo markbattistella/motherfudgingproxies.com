@@ -16,12 +16,6 @@
 - item2
 - item3
 
-## Proxy tunnelling apps
-
-### SquidMan
-
-### Charles
-
 ## Other pages
 
 [View Windows proxy settings](/proxy/windows ':class=mb-button')
