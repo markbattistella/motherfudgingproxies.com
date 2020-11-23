@@ -113,15 +113,21 @@ There's no real consistent Android proxy setting way of doing things because all
 
 1. Go to the Settings app
 
-1. Go to the Wifi options
+1. Go to the Wifi options and select the preferred wifi
 
-1. **Press and hold** on the preferred wifi and select `Modify Network`
+ ![](../assets/windows/image19.jpg)
 
-1. Select `Advanced`
+1. Select `Proxy`
+
+ ![](../assets/windows/image20.jpg)
 
 1. Select `Manual`
 
-1. Enter your proxy details and press `Save`
+ ![](../assets/windows/image21.jpg)
+
+1. Enter your proxy details
+
+ ![](../assets/windows/image22.jpg)
 
 ## Other pages
 

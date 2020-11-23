@@ -20,6 +20,7 @@ For this site demo, we're going to use the following as dummy data:
 
 | Field | Data |
 | :---- | :--- |
+| **Domain** | `BOO` |
 | **Username** | `jdoe` |
 | **Password** | `MySecurePassword` |
 | **Proxy Server** | `proxy.motherfudgingproxies.com` |
