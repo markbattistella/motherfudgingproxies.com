@@ -1,6 +1,6 @@
 # <i class="i-ios"></i> iOS / iPadOS :id=ios
 
-### Settings (iOS and iPadOS)
+## Settings (iOS and iPadOS)
 
 1. Open the `Settings` app
 
@@ -22,11 +22,11 @@
 
  ![](../assets/macOS/image13.jpg)
 
+## Helpers
 
+Let's be blunt - any proxy apps on the App Store are only for debugging not forwarding to your corporate proxy servers.
 
-The only helpers you can use on iOS devices is using Squid or Charles on another machine, and then point your iOS device to use that as the proxy server.
-
-Charles _does_ have an iOS and iPadOS app, but it is only for debugging not forwarding to the main proxy server :disappointed:
+Apps like `Charles iOS` or `Proxyman iOS` will only let you analyse your iOS network traffic, but don't solve any proxy connection issues :disappointed:
 
 So in short, you're tied in to native proxy settings.
 
