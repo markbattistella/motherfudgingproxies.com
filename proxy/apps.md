@@ -1,4 +1,4 @@
-# Applications / Services
+# <i class="i-apps"></i> Applications / Services :id=applications
 
 ## git
 
@@ -16,9 +16,4 @@
 - item2
 - item3
 
-## Other pages
-
-[View Windows proxy settings](/proxy/windows ':class=mb-button')
-[View Linux proxy settings](/proxy/linux ':class=mb-button')
-[View Applications proxy settings](/proxy/apps ':class=mb-button')
-[Go home](/ ':class=mb-button')
+[footer](../site/footer.md ':include')

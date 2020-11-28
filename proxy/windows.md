@@ -1,4 +1,4 @@
-# Windows
+# <i class="i-windows"></i> Windows :id=windows
 
 Windows was fairly consistent in their proxy settings up until they released their new interfaced version and new transitional Settings App.
 
@@ -105,33 +105,4 @@ When using these apps the above Windows settings for proxy should be configured 
 
 1. Press `OK`
 
-### AndroidOS
-
-I know that Android and Windows aren't the same but hey, for now they are.
-
-There's no real consistent Android proxy setting way of doing things because all the various flavours, but this is a _semi_-example:
-
-1. Go to the Settings app
-
-1. Go to the Wifi options and select the preferred wifi
-
- ![](../assets/windows/image19.jpg)
-
-1. Select `Proxy`
-
- ![](../assets/windows/image20.jpg)
-
-1. Select `Manual`
-
- ![](../assets/windows/image21.jpg)
-
-1. Enter your proxy details
-
- ![](../assets/windows/image22.jpg)
-
-## Other pages
-
-[View macOS proxy settings](/proxy/macos ':class=mb-button')
-[View Linux proxy settings](/proxy/linux ':class=mb-button')
-[View Applications proxy settings](/proxy/apps ':class=mb-button')
-[Go home](/ ':class=mb-button')
+[footer](../site/footer.md ':include')

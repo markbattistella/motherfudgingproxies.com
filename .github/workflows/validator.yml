@@ -20,7 +20,7 @@ jobs:
       - name: Markdown Lint
         uses: ruzickap/action-my-markdown-linter@v1
         with:
-          config_file: .markdownlint.yml
+          config_file: ".github/config/.markdownlint.yml"
           search_paths: |
             section/
 
@@ -34,5 +34,5 @@ jobs:
         with:
           use-quiet-mode: 'yes'
           use-verbose-mode: 'yes'
-          config-file: 'mlc_config.json'
+          config-file: ".github/config/mlc_config.json"
           check-modified-files-only: 'no'

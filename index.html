@@ -52,7 +52,6 @@
 		// formatted dates
 		formatUpdated: '{DD}/{MM}/{YYYY} {HH}:{mm}',
 
-
 		// use a sidebar
 		loadSidebar: false,
 		hideSidebar: true,
@@ -60,21 +59,23 @@
 		// max TOC levels
 		maxLevel: 3,
 
-
 		// custom: footer in sidebar
 		autoFooter: {
 			name: 'Mark Battistella',
 			url: 'https://github.com/markbattistella',
 			copyYear: '2013',
-			policy: true,
-			terms: true,
-			cookies: true
+			policy: 'site/policy',
+			terms: 'site/terms',
+			cookies: 'site/cookies'
 		},
 
 		// tabs
 		tabs: {
-			sync: true,
-			theme: 'material',
+			persist : true,
+			sync : true,
+			theme : 'material',
+			tabComments: false,
+			tabHeadings: true
 		}
 	}
 	</script>

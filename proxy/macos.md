@@ -1,4 +1,4 @@
-# macOS
+# <i class="i-macos"></i> macOS :id=macos
 
 ## Standard way
 
@@ -140,17 +140,4 @@ When using these apps the above macOS settings for proxy should be configured to
 
 1. Press `OK`
 
-### iOS / iPad OS
-
-The only helpers you can use on iOS devices is using Squid or Charles on another machine, and then point your iOS device to use that as the proxy server.
-
-Charles _does_ have an iOS and iPadOS app, but it is only for debugging not forwarding to the main proxy server :disappointed:
-
-So in short, you're tied in to native proxy settings.
-
-## Other pages
-
-[View Windows proxy settings](/proxy/windows ':class=mb-button')
-[View Linux proxy settings](/proxy/linux ':class=mb-button')
-[View Applications proxy settings](/proxy/apps ':class=mb-button')
-[Go home](/ ':class=mb-button')
+[footer](../site/footer.md ':include')

@@ -4,11 +4,6 @@
 
 Because let's face it - corporate proxies _always_ work :roll_eyes:
 
-[Let\'s begin fixing this &darr;](#proxies-ugh)<br><br>
-[Windows](/proxy/windows)
-[macOS](/proxy/macos)
-[Linux](/proxy/linux)
-[Applications](/proxy/apps)
-<br><br><br>
-[![](../assets/main/paypal.png ':size=220')](https://www.paypal.me/markbattistella/6AUD ':class=funding')
-[![](../assets/main/bmac.png ':size=220')](https://www.buymeacoffee.com/markbattistella ':class=funding')
+[Let\'s fix this &nbsp; &darr;](#proxies-ugh)<br><br>
+<a href="https://www.paypal.me/markbattistella/6AUD" style="background: #0079C1 !important;" class="fund"><i class="i-paypal"></i><span>@markbattistella</span></a>
+<a href="https://www.buymeacoffee.com/markbattistella" style="background: #e67e22 !important;" class="fund"><i class="i-bmac"></i><span>buymeacoffee</span></a>
