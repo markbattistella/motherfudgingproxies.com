@@ -41,28 +41,6 @@
 
 ?> This site also assumes you're using standard proxies, and not SOCKS
 
-### Settings (iOS and iPadOS)
-
-1. Open the `Settings` app
-
- ![](../assets/macOS/image09.jpg)
-
-1. Enter the Wi-Fi settings view
-
- ![](../assets/macOS/image10.jpg)
-
-1. Press the :information_source: icon
-
- ![](../assets/macOS/image11.jpg)
-
-1. Scroll to the bottom, and press `Configure Proxy`
-
- ![](../assets/macOS/image12.jpg)
-
-1. Change the setting to `Manual`, and enter the proxy settings. Press `Save` _not_ back or else you'll lose everything you just entered :facepalm:
-
- ![](../assets/macOS/image13.jpg)
-
 ## Helpers
 
 Helper apps are really good at tunnelling all the network traffic into the localhost and then sending it through to the external proxy server.
@@ -95,6 +73,40 @@ When using these apps the above macOS settings for proxy should be configured to
 
  ![](../assets/macOS/image18.jpg)
  ![](../assets/macOS/image19.jpg)
+
+### [Proxyman](https://proxyman.io)
+
+1. Open the app
+
+ ![](../assets/macOS/image31.jpg)
+
+1. Stop the recording and clear the session
+
+ ![](../assets/macOS/image32.jpg)
+
+1. Open the preferences `CMD + ,` and under `General` set the port to `3128`, and uncheck `Auto select available port`
+
+ ![](../assets/macOS/image33.jpg)
+
+1. Then go to `Advanced` and install the `Proxy Helper Tool`
+
+ ![](../assets/macOS/image34.jpg)
+
+1. From the menubar, check the `Override macOS Proxy` and then open `External Proxy Settings...`
+
+ ![](../assets/macOS/image35.jpg)
+
+1. Fill in the HTTP and HTTPS settings
+
+ ![](../assets/macOS/image36.jpg)
+ ![](../assets/macOS/image37.jpg)
+
+1. _(optional)_ To set up iOS and Android follow the guides in the app
+
+ !> It is important to note that using these proxy settings for iOS / iPadOS / Android don't forward directly to the external proxy server. They go to your macOS machine (so it is really hit-and-miss with success rates)
+
+ ![](../assets/macOS/image38.jpg)
+ ![](../assets/macOS/image39.jpg)
 
 ### [Charles Proxy](https://www.charlesproxy.com)
 
