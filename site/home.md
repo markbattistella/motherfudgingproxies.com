@@ -22,29 +22,18 @@ All I know is when you're getting a `407 Proxy Authentication Required` message 
 |------------------|----------------------------------|
 | **Domain**       | `BOO`                            |
 | **Username**     | `jdoe`                           |
-| **Password**     | `●●●●●●●●●●●●●●●●`               |
+| **Password**     | `●●●●●●●●●●` or `mypassword`     |
 | **Proxy Server** | `proxy.motherfudgingproxies.com` |
 | **Proxy Port**   | `3128`                           |
 
-## Systems
-
-<div id="linked-areas">
-
-[<i class="i-windows"></i> Windows](proxy/windows ':class=mb-button')
-[<i class="i-macos"></i>macOS](proxy/macOS ':class=mb-button')
-[<i class="i-linux"></i>Linux](proxy/Linux ':class=mb-button')
-[<i class="i-ios"></i>iOS / iPadOS](proxy/ios ':class=mb-button')
-[<i class="i-android"></i>Android](proxy/android ':class=mb-button')
-[<i class="i-apps"></i>Applications](proxy/apps ':class=mb-button')
-
-</div>
+[footer](../site/footer.md ':include')
 
 ## Contributing
 
-There are way too many proxy setting for [one guy](https://twitter.com/markbattistella) can find or know about.
+There are way too many proxy setting for [one guy](https://twitter.com/markbattistella) can find, know, or care about.
 
 So if you find one that's missing, then [fork the repo](https://github.com/markbattistella/motherfudgingproxies.com), create a new branch, add your additions, and then request a pull request.
 
 Hopefully by the time we document all the proxies, we won't need them anymore!
 
-<a href="https://github.com/markbattistella/motherfudgingproxies.com" class="mb-button" style="background:#2A2A72;"><i class="i-fork"></i>Fork me!</a>
+[<i class="i-fork"></i>Fork me!](https://github.com/markbattistella/motherfudgingproxies.com ':class=mb-button')

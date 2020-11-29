@@ -14,68 +14,36 @@
 
 <body>
 	<div id="app"></div>
-
-	<!-- <footer style="position: fixed;bottom: 0;left: 0;right: 0;background: rgba(0,0,0,0.3);">
-	  <div style="max-width: var(--content-max-width);margin: 0 auto;">
-		  <div id="mb-footer"></div>
-	  </div>
-	</footer> -->
+	<footer><div id="mb-footer"></div></footer>
 
 	<script>
 	// docsify.js settings
 	window.$docsify = {
-
-		// repo
 		repo: 'markbattistella/motherfudgingproxies.com',
-
-		// cover page
-		coverpage: 'site/cover.md',
-
-		// load the navigation bar
-		loadNavbar: 'site/navigation.md',
-
-		// home page
-		homepage: 'site/home.md',
-
-		// load _404.md
-		notFoundPage: 'site/404.md',
-
-		// on page change scroll to top
-		auto2top: true,
-
-		// relative urls
-		relativePath: true,
-
-		// site theme
-		themeColor: '#6e529d',
-
-		// formatted dates
-		formatUpdated: '{DD}/{MM}/{YYYY} {HH}:{mm}',
-
-		// use a sidebar
-		loadSidebar: false,
-		hideSidebar: true,
-
-		// max TOC levels
-		maxLevel: 3,
-
-		// custom: footer in sidebar
+		coverpage:			'site/cover.md',
+		loadNavbar:			'site/navigation.md',
+		homepage:			'site/home.md',
+		notFoundPage:		'site/404.md',
+		loadSidebar:		false,
+		hideSidebar:		true,
+		maxLevel:			0,
+		auto2top:			true,
+		relativePath:		true,
+		themeColor:			'var(--mb-theme-01)',
 		autoFooter: {
-			name: 'Mark Battistella',
-			url: 'https://github.com/markbattistella',
-			copyYear: '2013',
-			policy: 'site/policy',
-			terms: 'site/terms',
-			cookies: 'site/cookies'
+			name:			'Mark Battistella',
+			url:			'https://github.com/markbattistella',
+			copyYear:		'2013',
+			policy:			'site/policy',
+			terms:			'site/terms',
+			cookies:		'site/cookies'
 		},
-
-		// tabs
 		tabs: {
-			persist : true,
-			sync : true,
-			theme : 'material',
-			tabComments: false,
-			tabHeadings: true
+			persist:		true,
+			sync:			true,
+			theme:			'material',
+			tabComments:	false,
+			tabHeadings:	true
 		}
 	}
 	</script>

@@ -8,6 +8,7 @@
 [<i class="i-ios"></i>iOS / iPadOS](/proxy/ios ':class=mb-button')
 [<i class="i-android"></i>Android](/proxy/android ':class=mb-button')
 [<i class="i-apps"></i>Applications](/proxy/apps ':class=mb-button')
+[<i class="i-helper"></i>Helpers](/proxy/helper ':class=mb-button')
 
 </div>
 
