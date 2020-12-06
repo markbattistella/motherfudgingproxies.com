@@ -1,13 +1,19 @@
-<div style="border:10px solid rgba(255,255,255,0.3); width: 500px; text-align: center;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -80%); background: rgba(255,255,255,0.5);border-radius:1rem;">
+# [MotherFudgingProxies.com](https://motherfudgingproxies.com/)
 
-# PROXIES F#%&ING SUCK
+## Proxies, ugh
 
-<small>Hopefully this site will help - soon</small>
+If you've ever worked in a corporate environment where you need to authenticate against a proxy server you know one thing for sure - they suck.
 
-![Help donate](https://img.shields.io/badge/%20-@markbattistella-blue?logo=paypal&link=https://www.paypal.me/markbattistella/6AUD) ![Buy me a coffee](https://img.shields.io/badge/%20-buymeacoffee-black?logo=buy-me-a-coffee&link=https://www.buymeacoffee.com/markbattistella)
+Sometimes they just work, sometimes they don't. Some apps have settings in built, other times it uses the system.
 
-</div>
+You really can't win.
 
-</div>
+My aim is really to make it easy to know what to configure to get your services working and authenticating against the proxy server.
 
-<style>html { background: url('assets/bg.png'); height: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; }#main { height: 100vh; }</style>
+## Why
+
+It may seem easy to set up your proxy configuration on the operating system's settings but a lot of apps don't use these settings or try connecting their servers directly via IP.
+
+Some apps have their own proxy settings, but then don't have fields for authentication, others don't have these configuration settings and ignore your system settings entirely.
+
+All I know is when you're getting a 407 Proxy Authentication Required message and thinking - whhhhhhy? - then I want that to stop happening!
