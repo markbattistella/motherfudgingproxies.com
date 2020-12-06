@@ -56,8 +56,7 @@ MD013: false
 
 
 ## MD024 - Multiple headings with the same content
-MD024:
-    allow_different_nesting: true
+MD024: true
 
 ## MD025 - Multiple top level headings in the same document
 

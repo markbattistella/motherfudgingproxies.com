@@ -9,53 +9,41 @@
 
 		<!-- add: stylesheets -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
-		<link rel="stylesheet" href="assets/custom.css">
+		<link rel="stylesheet" href="assets/main/custom.css">
 </head>
 
-<body style="width: 100vw; height: 100vh; overflow: hidden;">
+<body>
 	<div id="app"></div>
+	<footer><div id="mb-footer"></div></footer>
 
 	<script>
 	// docsify.js settings
 	window.$docsify = {
-
-		// on TOC change scroll to top
-		auto2top: true,
-
-		// cover page doc
-		coverpage: false,
-
-		// use a TOC sidebar
-		hideSidebar: true,
-		loadSidebar: false,
-		loadNavbar: false,
-
-		// relative urls
-		relativePath: false,
-
-		// site theme
-		// themeColor: 'rgba(52,73,94,1)',
-
-		// load _404.md
-		notFoundPage: true,
-
-		// formatted dates
-		formatUpdated: '{DD}/{MM}/{YYYY} {HH}:{mm}',
-
-		// custom: footer in sidebar
+		repo: 'markbattistella/motherfudgingproxies.com',
+		coverpage:			'site/cover.md',
+		loadNavbar:			'site/navigation.md',
+		homepage:			'site/home.md',
+		notFoundPage:		'site/404.md',
+		loadSidebar:		false,
+		hideSidebar:		true,
+		maxLevel:			0,
+		auto2top:			true,
+		relativePath:		true,
+		themeColor:			'var(--mb-theme-01)',
 		autoFooter: {
-			name: 'Mark Battistella',
-			url: 'https://github.com/markbattistella',
-			copyYear: '2013',
-			policy: true,
-			terms: true,
-			cookies: true
+			name:			'Mark Battistella',
+			url:			'https://github.com/markbattistella',
+			copyYear:		'2013',
+			policy:			'site/policy',
+			terms:			'site/terms',
+			cookies:		'site/cookies'
 		},
-
-		// tabs
 		tabs: {
-			sync: true,
-			theme: 'material',
+			persist:		true,
+			sync:			true,
+			theme:			'material',
+			tabComments:	false,
+			tabHeadings:	true
 		}
 	}
 	</script>
