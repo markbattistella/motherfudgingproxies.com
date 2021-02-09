@@ -15,7 +15,7 @@
 	},
 	"dependencies": {
 		"@markbattistella/docsify-sidebarfooter": "^3.2.1",
-		"docsify": "^4.11.6",
+		"docsify": "^4.12.0",
 		"docsify-tabs": "^1.4.4",
 		"docsify-themeable": "^0.8.4"
 	},
