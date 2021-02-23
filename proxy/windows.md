@@ -66,4 +66,4 @@ Helper apps are really good at tunnelling all the network traffic into the local
 
 Instead of using the `proxy.motherfudgingproxies.com` address, you'd enter `127.0.0.1` and let the application handle all requests.
 
-[footer](../site/footer.md ':include')
+[footer nav](../site/footer.md ':include')

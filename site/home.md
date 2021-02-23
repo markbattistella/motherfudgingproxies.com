@@ -26,7 +26,7 @@ All I know is when you're getting a `407 Proxy Authentication Required` message 
 | **Proxy Server** | `proxy.motherfudgingproxies.com` |
 | **Proxy Port**   | `3128`                           |
 
-[footer](../site/footer.md ':include')
+[footer nav](../site/footer.md ':include')
 
 ## Contributing
 

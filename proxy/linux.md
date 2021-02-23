@@ -112,4 +112,4 @@ proxy_auth_method=basic
 
 <!-- tabs:end -->
 
-[footer](../site/footer.md ':include')
+[footer nav](../site/footer.md ':include')

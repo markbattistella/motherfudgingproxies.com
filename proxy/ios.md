@@ -30,4 +30,4 @@ Apps like `Charles iOS` or `Proxyman iOS` will only let you analyse your iOS net
 
 So in short, you're tied in to native proxy settings.
 
-[footer](../site/footer.md ':include')
+[footer nav](../site/footer.md ':include')

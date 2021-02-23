@@ -30,4 +30,4 @@ They only let you analyse your phone's network traffic, but don't solve any prox
 
 So in short, you're tied in to native proxy settings.
 
-[footer](../site/footer.md ':include')
+[footer nav](../site/footer.md ':include')

@@ -15,4 +15,4 @@
 
 Open an issue flagged as a security if low level risk.
 
-If it is high risk, please send an [email](mailto:Mark.Battistella@opp.vic.gov.au).
+If it is high risk, please [send a DM](https://twitter.com/markbattistella)

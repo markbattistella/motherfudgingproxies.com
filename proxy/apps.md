@@ -136,4 +136,4 @@ Then add the proxy details to the `config.json` file:
 }
 ```
 
-[footer](../site/footer.md ':include')
+[footer nav](../site/footer.md ':include')

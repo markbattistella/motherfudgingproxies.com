@@ -47,4 +47,4 @@ Helper apps are really good at tunnelling all the network traffic into the local
 
 When using these apps the above macOS settings for proxy should be configured to the localhost or `127.0.0.1` and whatever port you use from the app (`3128` in these examples).
 
-[footer](../site/footer.md ':include')
+[footer nav](../site/footer.md ':include')

@@ -20,4 +20,4 @@ Select the system you're using to see what helpers are available!
 
 <!-- tabs:end -->
 
-[footer](../site/footer.md ':include')
+[footer nav](../site/footer.md ':include')
