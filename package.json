@@ -20,7 +20,7 @@
 		"docsify-themeable": "^0.8.4"
 	},
 	"devDependencies": {
-		"docsify-cli": "^4.4.2"
+		"docsify-cli": "^4.4.3"
 	},
 	"scripts": {
 		"launch": "docsify serve . -p 3001 -o"
