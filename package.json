@@ -16,7 +16,7 @@
 	"dependencies": {
 		"@markbattistella/docsify-sidebarfooter": "^3.2.1",
 		"docsify": "^4.12.1",
-		"docsify-tabs": "^1.4.4",
+		"docsify-tabs": "^1.5.0",
 		"docsify-themeable": "^0.8.4"
 	},
 	"devDependencies": {
