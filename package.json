@@ -14,7 +14,7 @@
 		"url": "https://github.com/markbattistella/motherfudgingproxies.com/issues"
 	},
 	"dependencies": {
-		"@markbattistella/docsify-sidebarfooter": "^3.2.1",
+		"@markbattistella/docsify-sidebarfooter": "^4.0.0",
 		"docsify": "^4.12.1",
 		"docsify-tabs": "^1.5.0",
 		"docsify-themeable": "^0.8.4"
