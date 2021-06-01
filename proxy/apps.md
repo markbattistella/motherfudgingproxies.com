@@ -135,5 +135,34 @@ Then add the proxy details to the `config.json` file:
     }
 }
 ```
+## Docker (Windows)
+### Docker Desktop for Windows
+
+Open the Docker Desktop dashboard and navigate to Settings > Resources > Proxies. 
+
+Turn on Manual proxy configuration and enter in your proxy details using the below format:
+
+```sh
+
+Web Server (HTTP)  = http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128
+Secure Web Server (HTTPS)  = http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128
+
+```
+
+### Docker Environment
+In your root directory `C:\Users\jdoe` create a file called `.bash_profile`
+
+Edit the `.bash_profile` file and add the below:
+
+```sh
+# proxy settings
+http_proxy="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
+https_proxy="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
+
+HTTP_PROXY="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
+HTTPS_PROXY="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
+```
+
+
 
 [footer nav](../site/footer.md ':include')
