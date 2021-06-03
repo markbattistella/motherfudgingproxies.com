@@ -24,6 +24,6 @@
 		"marked": ">=2.0.5"
 	},
 	"scripts": {
-		"launch": "docsify serve . -p 3001 -o"
+		"launch": "docsify serve . -o"
 	}
 }

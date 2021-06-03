@@ -60,6 +60,21 @@ Usually when you configure one of the places for proxies in Windows it does filt
 
 ?> Sometimes you need to open Internet Explorer and authenticate, sometimes you don't and it will ask when you open the desired app. Sometimes you can use Edge, sometimes you can't. Microsoft, right?
 
+## Environment
+
+In your root directory `C:\Users\jdoe` create a file called `.bash_profile`.
+
+Edit the `.bash_profile` file and add your proxy details:
+
+```sh
+# proxy settings
+http_proxy="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
+https_proxy="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
+
+HTTP_PROXY="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
+HTTPS_PROXY="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
+```
+
 ## [Helpers](/proxy/helper)
 
 Helper apps are really good at tunnelling all the network traffic into the localhost (`127.0.0.1`) and then forwarding it to the external proxy server.

@@ -112,4 +112,39 @@ proxy_auth_method=basic
 
 <!-- tabs:end -->
 
+### Environment
+
+<!-- tabs:start -->
+
+### **Headless**
+
+Create a `proxy.sh` file:
+
+```sh
+touch /etc/profile.d/proxy.sh
+```
+
+Then add the details in:
+
+```sh
+# proxy settings
+PROXY_URL="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128/"
+
+http_proxy=$PROXY_URL
+https_proxy=$PROXY_URL
+ftp_proxy=$PROXY_URL
+no_proxy="localhost"
+
+HTTP_PROXY=$PROXY_URL
+HTTPS_PROXY=$PROXY_URL
+FTP_PROXY=$PROXY_URL
+NO_PROXY="localhost"
+
+export http_proxy https_proxy ftp_proxy no_proxy HTTP_PROXY HTTPS_PROXY FTP_PROXY NO_PROXY
+```
+
+Apply the settings: `source /etc/profile.d/proxy.sh`
+
+<!-- tabs:end -->
+
 [footer nav](../site/footer.md ':include')
