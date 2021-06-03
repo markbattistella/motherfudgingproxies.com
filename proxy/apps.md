@@ -84,7 +84,9 @@ proxy-user = "jdoe:mypassword"
 
 ## Docker
 
-### Docker environment
+### Linux
+
+#### Environment
 
 Edit your `/etc/sysconfig/docker` file:
 
@@ -97,7 +99,7 @@ HTTP_PROXY="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
 HTTPS_PROXY="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
 ```
 
-### Docker service
+#### Service
 
 First make the directory (if it doesn't exist), and create the `http-proxy.conf` file:
 
@@ -114,7 +116,7 @@ Environment="HTTP_PROXY=http://jdoe:mypassword@proxy.motherfudgingproxies.com:31
 Environment="HTTPS_PROXY=http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
 ```
 
-### Docker user
+#### User
 
 First make the directory (if it doesn't exist), and create the `config.json` file:
 
@@ -134,6 +136,26 @@ Then add the proxy details to the `config.json` file:
         }
     }
 }
+```
+
+### Windows
+
+#### Docker Desktop
+
+Open the Docker Desktop dashboard and navigate to `Settings > Resources > Proxies`.
+
+Turn on manual proxy configuration and enter in your proxy details:
+
+##### Web Server (HTTP)
+
+```text
+http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128
+```
+
+##### Secure Web Server (HTTPS)
+
+```text
+http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128
 ```
 
 [footer nav](../site/footer.md ':include')

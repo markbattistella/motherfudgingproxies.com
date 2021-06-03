@@ -1,7 +1,7 @@
 {
 	"name": "motherfudgingproxies.com",
 	"description": "Because let's face it - corporate proxies always work",
-	"version": "1.0.0",
+	"version": "2021.6.3",
 	"main": "index.html",
 	"author": "Mark Battistella (https://twitter.com/markbattistella)",
 	"license": "MIT",
@@ -24,6 +24,6 @@
 		"marked": ">=2.0.6"
 	},
 	"scripts": {
-		"launch": "docsify serve . -p 3001 -o"
+		"launch": "docsify serve . -o"
 	}
 }
