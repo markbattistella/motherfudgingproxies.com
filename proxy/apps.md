@@ -82,6 +82,33 @@ proxy = proxy.motherfudgingproxies.com:3128
 proxy-user = "jdoe:mypassword"
 ```
 
+## homebrew
+
+Set the proxy in the environment by:
+
+```sh
+export http_proxy="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
+export https_proxy="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
+
+export HTTP_PROXY="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
+export HTTPS_PROXY="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
+
+> brew install ...
+```
+
+Or you can do it per command for the `brew` command:
+
+```sh
+# http
+http_proxy="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128" brew install ...
+
+# https
+https_proxy="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128" brew install ...
+
+# http / https
+http_proxy="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128" https_proxy="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128" brew install ...
+```
+
 ## Docker
 
 ### Linux
