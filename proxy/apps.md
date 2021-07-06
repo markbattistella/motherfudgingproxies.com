@@ -109,6 +109,30 @@ https_proxy="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128" brew in
 http_proxy="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128" https_proxy="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128" brew install ...
 ```
 
+## Environment
+
+Sometimes adding the proxy to the environment will allow your connection outbound.
+
+### Windows
+
+Create a `.bash_profile` in the Users home directory:
+
+```gitbash
+nano C:\Users\JDoe\.bash_profile
+```
+
+Add in the details of the proxy:
+
+```sh
+export http_proxy="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
+export https_proxy="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
+
+export HTTP_PROXY="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
+export HTTPS_PROXY="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
+```
+
+You can also run the `export` lines directly in the command line, but won't be persistent after reboots.
+
 ## Docker
 
 ### Linux
