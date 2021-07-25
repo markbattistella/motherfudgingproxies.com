@@ -2,6 +2,8 @@
 
 ## git
 
+?> If you need to constantly switch between proxy and non-proxy settings use a tool like **[gitrc](https://www.npmjs.com/package/@markbattistella/gitrc)**
+
 Run this from your terminal:
 
 ```sh
@@ -29,6 +31,8 @@ Or you can edit directly your ~/.gitconfig file with the following structure:
 ```
 
 ## npm
+
+?> If you need to constantly switch between proxy and non-proxy settings use a tool like **[npmrc](https://www.npmjs.com/package/npmrc)**
 
 Run this from your terminal:
 
