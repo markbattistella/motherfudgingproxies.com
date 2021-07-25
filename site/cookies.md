@@ -1,4 +1,4 @@
-# Cookie Policy
+# Our Cookie Policy
 
 This is the Cookie Policy for MotherFudgingProxies.com site, accessible from [our site](https://github.com/markbattistella/motherfudgingproxies.com).
 
