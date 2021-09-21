@@ -21,7 +21,7 @@
 	},
 	"devDependencies": {
 		"docsify-cli": "^4.4.3",
-		"marked": ">=3.0.3",
+		"marked": ">=3.0.4",
 		"ws": ">=8.2.2"
 	},
 	"scripts": {
