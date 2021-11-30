@@ -22,7 +22,7 @@
 	"devDependencies": {
 		"docsify-cli": "^4.4.3",
 		"marked": ">=4.0.5",
-		"ws": ">=8.2.3"
+		"ws": ">=8.3.0"
 	},
 	"scripts": {
 		"launch": "docsify serve . -o",
