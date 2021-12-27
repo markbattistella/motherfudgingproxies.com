@@ -13,17 +13,6 @@
 	"bugs": {
 		"url": "https://github.com/markbattistella/motherfudgingproxies.com/issues"
 	},
-	"dependencies": {
-		"@markbattistella/docsify-sidebarfooter": "^4.0.0",
-		"docsify": "^4.12.1",
-		"docsify-tabs": "^1.5.2",
-		"docsify-themeable": "^0.8.6"
-	},
-	"devDependencies": {
-		"docsify-cli": "^4.4.3",
-		"marked": ">=4.0.5",
-		"ws": ">=8.3.0"
-	},
 	"scripts": {
 		"launch": "docsify serve . -o",
 		"update": "ncu -u && npm update && npm install"
