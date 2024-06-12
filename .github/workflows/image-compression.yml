@@ -7,7 +7,7 @@ on:
 
 jobs:
 
-  image-comrpession:
+  image-compression:
     name: Compress images
     runs-on: ubuntu-latest
     steps:
@@ -25,7 +25,7 @@ jobs:
         id: date
         run: echo "date=$(date +'%Y-%m-%d')" >> "$GITHUB_ENV"
 
-     - name: Create New Pull Request (if needed)
+      - name: Create New Pull Request (if needed)
         if: steps.calibre.outputs.markdown != ''
         uses: peter-evans/create-pull-request@v3
         with:
