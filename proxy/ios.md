@@ -18,16 +18,16 @@
 
  ![](../assets/macOS/image12.jpg)
 
-1. Change the setting to `Manual`, and enter the proxy settings. Press `Save` _not_ back or else you'll lose everything you just entered :facepalm:
+1. Change the setting to `Manual`, and enter the proxy settings. Press `Save` *not* back or else you'll lose everything you just entered :facepalm:
 
  ![](../assets/macOS/image13.jpg)
 
 ## Helpers
 
-Let's be blunt - any proxy apps on the App Store are only for debugging not forwarding to your corporate proxy servers.
+Let's be blunt - any proxy apps on the App Store are only for debugging, not for forwarding traffic to your corporate proxy servers.
 
-Apps like `Charles iOS` or `Proxyman iOS` will only let you analyse your iOS network traffic, but don't solve any proxy connection issues :disappointed:
+Apps like `Charles iOS` or `Proxyman iOS` will only let you analyse your iOS network traffic; they don't solve any proxy connection issues :disappointed:.
 
-So in short, you're tied in to native proxy settings.
+So, in short, you're tied to the native proxy settings.
 
 [footer nav](../site/footer.md ':include')

@@ -21,79 +21,65 @@
 		<meta http-equiv="cache-control" content="no-store">
 
 		<!-- add: stylesheets -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
-		<link rel="stylesheet" href="assets/main/style.min.css">
-
-		<!-- Google Tag Manager -->
-		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-TLRGB5J');</script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+		<link rel="stylesheet" href="assets/main/style.css">
 
 </head>
 
 <body>
 
+	<!-- header navigation -->
+	<div id="mb-navigation">
+		<li><a href="#/"><i class="i-home"></i>Home</a></li>
+		<li><a href="#/proxy/windows"><i class="i-windows"></i> Windows</a></li>
+		<li><a href="#/proxy/macos"><i class="i-macos"></i>macOS</a></li>
+		<li><a href="#/proxy/linux"><i class="i-linux"></i>Linux</a></li>
+		<li><a href="#/proxy/ios"><i class="i-ios"></i>iOS / iPadOS</a></li>
+		<li><a href="#/proxy/android"><i class="i-android"></i>Android</a></li>
+		<li><a href="#/proxy/apps"><i class="i-apps"></i>Applications</a></li>
+		<li><a href="#/proxy/helper"><i class="i-helper"></i>Helpers</a></li>
+	</div>
+
 	<!-- the documentation app -->
 	<div id="app"></div>
 
 	<!-- footer details -->
-	<footer><div id="mb-footer"></div></footer>
+	<footer id="mb-footer"></footer>
 
 	<script>
 	// docsify.js settings
 	window.$docsify = {
-		repo: 'markbattistella/motherfudgingproxies.com',
-		coverpage:			'site/cover.md',
-		loadNavbar:			'site/navigation.md',
-		homepage:			'site/home.md',
-		notFoundPage:		'site/404.md',
-		loadSidebar:		false,
-		hideSidebar:		true,
-		auto2top:			true,
-		relativePath:		true,
-		themeColor:			'var(--mb-theme-01)',
+		coverpage: 'site/cover.md',
+		loadNavbar: false,
+		homepage: 'site/home.md',
+		notFoundPage: 'site/404.md',
+		loadSidebar: false,
+		hideSidebar: true,
+		auto2top: true,
+		relativePath: true,
+		themeColor: 'var(--mb-theme-01)',
 		autoFooter: {
-			name:			'@markbattistella',
-			url:			'https://github.com/markbattistella',
-			copyYear:		'2013',
-			policy:			'site/policy',
-			terms:			'site/terms',
-			cookies:		'site/cookies',
-			onBody:			true
+			name: '@markbattistella',
+			url: 'https://github.com/markbattistella',
+			copyYear: '2013',
+			policy: 'site/policy',
+			terms: 'site/terms',
+			cookies: 'site/cookies',
+			customStyle: 'body'
 		},
 		tabs: {
-			persist:		true,
-			sync:			true,
-			theme:			'material',
-			tabComments:	false,
-			tabHeadings:	true
+			persist: true,
+			sync: true,
+			theme: 'material',
+			tabComments: false,
+			tabHeadings: true
 		}
 	}
 	</script>
 
-	<!-- add: docsify -->
 	<script src="https://cdn.jsdelivr.net/npm/docsify@latest"></script>
-
-	<!-- add more emojis -->
 	<script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
-
-	<!-- docsify-tabs (latest v1.x.x) -->
 	<script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
-
-	<!-- mbSidebarFooter -->
 	<script src="https://cdn.jsdelivr.net/npm/@markbattistella/docsify-sidebarfooter"></script>
-
-	<!-- Global site tag (gtag.js) - Google Ads: 997383717 -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-997383717"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'AW-997383717');
-	gtag('event', 'conversion', {'send_to': 'AW-997383717/4sc8CI736OwBEKW8y9sD'});
-	</script>
-
 </body>
 </html>

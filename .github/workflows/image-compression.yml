@@ -1,0 +1,37 @@
+name: Compress images
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 1 */2 *'
+
+jobs:
+
+  image-comrpession:
+    name: Compress images
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Compress Images
+        id: calibre
+        uses: calibreapp/image-actions@main
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          compressOnly: true
+
+      - name: Get date
+        id: date
+        run: echo "date=$(date +'%Y-%m-%d')" >> "$GITHUB_ENV"
+
+     - name: Create New Pull Request (if needed)
+        if: steps.calibre.outputs.markdown != ''
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.BOT_ACCESS_TOKEN }}
+          commit-message: Compressed Images
+          committer: "mb-actions[bot] <markbattistella-bot@users.noreply.github.com>"
+          branch-suffix: timestamp
+          title: ${{ env.date }} - Compressed Images
+          body: ${{ steps.calibre.outputs.markdown }}

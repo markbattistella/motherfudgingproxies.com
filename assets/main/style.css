@@ -1,20 +1,32 @@
 /*! (c) Mark Battistella | motherfudgingproxies.com | @markbattistella */
 
-/* root items */
-* {
+:root {
+	--colour-mono: 0, 0%;
+	--colour-01: 280, 84%;
+	--colour-02: 218, 97%;
 	--emoji-size: calc( 1.3 * 1em );
-	--mb-theme-01: #6e529d;
-	--mb-theme-02: #d97b93;
+	--size-radius: 1em;
 }
 
+*, :after, :before {
+	box-sizing: border-box;
+}
 
-/* plugins */
+::selection {
+	--mono: 100%;
+	background: hsl( var( --colour-01 ), 50% );
+	color: hsl( var( --colour-mono ), var( --mono ) );
+	text-shadow: none;
+	border-width: 0;
+	text-decoration: none;
+	border-color: transparent;
+	border-radius: 0;
+}
+
 [class*=docsify-tabs--] .docsify-tabs__content {
 	padding: 2em 1em;
 }
 
-
-/* fonts */
 @font-face {
   font-family: 'fontello';
   src: url('font/mfp.eot?96951351');
@@ -26,11 +38,11 @@
   font-weight: normal;
   font-style: normal;
 }
+
 [class^="i-"]:before {
 	font-family: "fontello";
 	font-style: normal;
 	font-weight: normal;
-	speak: never;
 	display: inline-block;
 	text-decoration: inherit;
 	margin: 0;
@@ -54,19 +66,115 @@
 .mb-button [class^="i-"]:before{
 	position: absolute;
 	top: 0.5em;
-	left: 0.75em;;
+	left: 0.75em;
 	width: 2em;
-	line-height: 2em;
+	line-height: 2;
 	text-align: center;
-	background: rgba(255, 255, 255, 0.3);
-	border-radius: calc(
-					var(--cover-button-border-radius) * 2.5 )
-					var(--cover-button-border-radius);
-	color: rgba(0,0,0,0.7);
+	border-radius: var(--cover-button-border-radius);
 }
 
 
-/* links */
+
+
+
+section.cover.show:before {
+	background: linear-gradient(
+		180deg,
+		hsl(var(--colour-01), 20%) 0%,
+		hsl(var(--colour-02), 20%) 100%
+	);
+}
+section.cover, section.cover a {
+	color: hsl( var( --colour-mono ), 100% ) !important;
+	border: 0 !important;
+}
+
+section.cover {
+	text-align: center !important;
+	z-index: 9999 !important;
+	position: relative !important;
+}
+section.cover .cover-main {
+	max-width: 100%
+}
+section.cover h1 {
+	font-weight: 500;
+}
+
+section.cover h1 span span:before {
+	content: "Fudging";
+}
+section.cover h1:hover span span:before {
+	content: "F#%&ing";
+}
+
+
+section.cover p:last-child a:first-child {
+	width: 100% !important;
+	background-color: hsl( var(--colour-mono), 100% ) !important;
+	font-weight: bold;
+	color: hsl( var( --colour-mono ), 0% ) !important;
+	width: 100%;
+	max-width: 34em;
+	line-height: 3em;
+}
+
+section.cover p:last-child a:not(:first-child) {
+	text-decoration: none !important;
+	display: inline-block;
+	background-color: hsla( var(--colour-mono), 100%, 0.1 );
+	padding: 0 2em;
+	line-height: 3em;
+}
+
+
+.markdown-section table {
+	--mono: 95%;
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	border-radius: var(--size-radius) !important;
+}
+.markdown-section table tr {
+	background: none !important;
+}
+.markdown-section table th {
+	font-size: 1.2em;
+	font-weight: 900;
+}
+
+#mb-navigation,
+#mb-navigation ul,
+#mb-navigation li,
+#mb-navigation a {
+	list-style: none;
+}
+
+#mb-navigation {
+	position: sticky;
+	width: 100%;
+	top: 0;
+	z-index: 999;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 5px;
+	text-align: center;
+	font-weight: bold;
+}
+#mb-navigation li a {
+	--mono: 50%;
+	line-height: 3;
+	color: hsl( var( --colour-mono ), 100%);
+	background-color: hsla(var( --colour-01 ), var(--mono), 0.8);
+	display: block;
+}
+#mb-navigation li a:hover {
+	--mono: 40%;
+}
+#mb-navigation li a i {
+	padding: 10px;
+}
+
 #main a[target="_blank"]:after {
 	content: "\29C9";
 	display: inline-block;
@@ -80,13 +188,13 @@
 	display: block;
 	text-align: left;
 	padding: 0 6em 0 4em;
-	border-radius: var(--cover-button-border-radius);
-	background: var(--mb-theme-02);
-	color: #FFF !important;
+	border-radius: var(--size-radius);
+	background: hsl(var(--colour-02), 80%);
+	color: hsla(var( --colour-mono ), 0%, 0.9) !important;
 	margin-bottom: 1em;
 }
 .mb-button[href^="https://github.com"] {
-	background: var(--mb-theme-01);
+	background: hsl(var(--colour-01), 60%);
 }
 .mb-button:after {
 	content: '\2192';
@@ -97,7 +205,7 @@
 	line-height: 2em;
 	text-align: center;
 	background: rgba(0, 0, 0, 0.3);
-	border-radius: var(--cover-button-border-radius);
+	border-radius: var(--size-radius);
 }
 #linked-areas p {
 	display: flex;
@@ -111,72 +219,17 @@
 	margin-left: 2%;
 }
 
-
-/* coverpage */
-section.cover.show:before {
-  background: linear-gradient(
-	  				to bottom,
-					var(--mb-theme-01) 0%,
-					var(--mb-theme-02) 100%
-				);
-}
-section.cover {
-	color: #FFF;
-}
-section.cover h1 {
-	text-shadow: 0 1px 1em rgba(0,0,0,0.25);
-}
-section.cover p:last-child a {
-	border: none !important;
-	background: rgba(255, 255, 255, 0.1) !important;
-	color: #FFF !important;
-}
-section.cover .cover-main { max-width: 100%; }
-section.cover h1 span span:before {
-	content: "Fudging";
-}
-section.cover h1:hover span span:before {
-	content: "F#%&ing";
-}
-.cover .cover-main p:last-child a:first-child {
-	color: #222 !important;
-	background: #FFF !important;
-	width: 100%;
-	max-width: 34em;
-	line-height: 3em;
-	font-weight: bold;
-}
-section.cover p:last-child .fund {
-	text-decoration: none !important;
-	line-height: 2.5em;
-	display: inline-block;
-	border: 0;
-	color: #FFF !important;
-	position: relative;
-	padding: 0 2em 0 3.5em;
-	border-radius: var(--cover-button-border-radius);
-	margin: 0.5em 1em;
-	min-width: 13em;
-}
-section.cover p:last-child .fund:hover {
-	box-shadow: 0 0 5em rgba(255, 255, 255, 0.1);
-	transform: scale(1.03);
-}
-section.cover p:last-child .fund i {
-	position: absolute;
-	left: 0.5em;
-	top: 0.35em;
-	background: rgba(0, 0, 0, 0.3);
-	width: 2em;
-	text-align: center;
-	line-height: 1.75em;
-	border-radius: var(--cover-button-border-radius);
+.markdown-section .warn {
+	border-radius: var(--size-radius);
+	border-left-width: 2em;
 }
 
-
-/* main */
 h1, h2, h3, h4, h5, h6 {
 	font-weight: bold !important;
+}
+h1 a:hover, h2 a:hover, h3 a:hover,
+h4 a:hover, h5 a:hover, h6 a:hover {
+	text-decoration: none !important;
 }
 h1 i[class^="i-"] { margin-right: 0.3em; }
 h1 i[class^="i-"]:before {
@@ -192,6 +245,16 @@ h1 i[class^="i-"]:before {
 	vertical-align: text-bottom;
 	border: 5px double rgba(0, 0, 0, 0.1);
 }
+
+article#main h1 {
+	font-size: clamp(calc(18px * 2.0),
+			10vw - 2rem,
+			calc(18px * 2.5));
+	justify-content: center;
+}
+
+
+
 article#main { padding-bottom: 3em; }
 article#main h4,
 article#main h5,
@@ -202,27 +265,7 @@ article#main a {
 	font-weight: bold;
 	color: var(--blockquote-color);
 }
-footer {
-	position: fixed;
-	bottom: 0;
-	left: 50%;
-	border-radius: 10em 10em 0 0;
-	max-width: var(--content-max-width);
-	width: 100%;
-	padding: 0 45px;
-	text-align: center;
-	box-shadow: 0 -1em 1em 0 rgba(0,0,0,0.05);
-	transform: translateX(-50%);
-	background: #FFF;
-	line-height: 2em;
-}
-footer, footer a { color: #333; }
-footer hr { display: none; }
-#mb-footer > div > div,
-#mb-footer > div > a {
-	display: inline-block;
-	margin-right: 1em;
-}
+
 .markdown-section ol ol,
 .markdown-section ul ol {
 	list-style-type: lower-alpha;
@@ -235,41 +278,18 @@ footer hr { display: none; }
 	width: 1em;
 }
 
+#mb-footer a { color: inherit; }
 
-/* video + image */
-.mbwrapper {
-	position: relative;
-	padding-bottom: calc( var(--aspect-ratio, .5625) * 100% );
-	height: 0;
-}
-.mbwrapper iframe,
-.mbwrapper video {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
 img {
-	/* max-width: 40em !important; */
-	/* width: 100% !important; */
-	border-radius: .6em;
+	border-radius: var(--size-radius);
 	margin-bottom: 1em !important;
+	box-shadow: 0 0 1em hsla(var( --colour-mono ), 0%, 0.5);
+	max-width: 30em !important;
 }
 
-
-/* responsive */
 @media( max-width: 800px ) {
   #linked-areas p a {
 	  flex: 100%;
 	  margin: 0.5em 0 !important;
   }
-}
-
-@media( max-width: 430px ) {
-	footer {
-		position: relative;
-		left: auto;
-		transform: none;
-	}
 }

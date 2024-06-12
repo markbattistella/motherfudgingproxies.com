@@ -2,23 +2,23 @@
 
 ## git
 
-?> If you need to constantly switch between proxy and non-proxy settings use a tool like **[gitrc](https://www.npmjs.com/package/@markbattistella/gitrc)**
+?> If you need to constantly switch between proxy and non-proxy settings, use a tool like **[gitrc](https://www.npmjs.com/package/@markbattistella/gitrc)**
 
 Run this from your terminal:
 
 ```sh
-# http proxy
+# HTTP proxy
 git config --global http.proxy  http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128
 
-# https proxy
+# HTTPS proxy
 git config --global https.proxy http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128
 
-# sometimes you need to specify
+# Sometimes you need to specify the authentication method
 git config --global http.proxyAuthMethod  'basic'
 git config --global https.proxyAuthMethod 'basic'
 ```
 
-Or you can edit directly your ~/.gitconfig file with the following structure:
+Or you can edit your `~/.gitconfig` file directly with the following structure:
 
 ```sh
 [http]
@@ -32,16 +32,16 @@ Or you can edit directly your ~/.gitconfig file with the following structure:
 
 ## npm
 
-?> If you need to constantly switch between proxy and non-proxy settings use a tool like **[npmrc](https://www.npmjs.com/package/npmrc)**
+?> If you need to constantly switch between proxy and non-proxy settings, use a tool like **[npmrc](https://www.npmjs.com/package/npmrc)**
 
 Run this from your terminal:
 
 ```sh
-# http proxy
+# HTTP proxy
 npm config set proxy http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128
 npm config set http-proxy http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128
 
-# http proxy
+# HTTPS proxy
 npm config set https-proxy http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128
 ```
 
@@ -58,37 +58,37 @@ https_proxy=http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128
 Run this from your terminal:
 
 ```sh
-# http proxy
+# HTTP proxy
 yarn config set proxy http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128
 
-# https proxy
+# HTTPS proxy
 yarn config set https-proxy http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128
 ```
 
 ## wget
 
-Create a new file in the `etc` directory: `vi /etc/wget` and write up your proxy in the following format:
+Create a new file in the `etc` directory: `vi /etc/wget` and write your proxy settings in the following format:
 
 ```sh
-# proxy settings
+# Proxy settings
 http_proxy   = http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128
 https_proxy  = http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128
 ftp_proxy    = http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128
 ```
 
-## cUrl
+## cURL
 
-Create a new file in the home directory: `vi ~/.curlrc` and write up your proxy in the following format:
+Create a new file in the home directory: `vi ~/.curlrc` and write your proxy settings in the following format:
 
 ```sh
-# proxy settings
+# Proxy settings
 proxy = proxy.motherfudgingproxies.com:3128
 proxy-user = "jdoe:mypassword"
 ```
 
-## homebrew
+## Homebrew
 
-Set the proxy in the environment by:
+Set the proxy in the environment by running:
 
 ```sh
 export http_proxy="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
@@ -103,19 +103,19 @@ export HTTPS_PROXY="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
 Or you can do it per command for the `brew` command:
 
 ```sh
-# http
+# HTTP
 http_proxy="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128" brew install ...
 
-# https
+# HTTPS
 https_proxy="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128" brew install ...
 
-# http / https
+# HTTP / HTTPS
 http_proxy="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128" https_proxy="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128" brew install ...
 ```
 
 ## Environment
 
-Sometimes adding the proxy to the environment will allow your connection outbound.
+Sometimes adding the proxy to the environment will allow your connection to be outbound.
 
 ### Windows
 
@@ -135,7 +135,7 @@ export HTTP_PROXY="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
 export HTTPS_PROXY="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
 ```
 
-You can also run the `export` lines directly in the command line, but won't be persistent after reboots.
+You can also run the `export` lines directly in the command line, but they won't be persistent after reboots.
 
 ## Docker
 
@@ -146,7 +146,7 @@ You can also run the `export` lines directly in the command line, but won't be p
 Edit your `/etc/sysconfig/docker` file:
 
 ```sh
-# proxy settings
+# Proxy settings
 http_proxy="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
 https_proxy="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
 
@@ -156,7 +156,7 @@ HTTPS_PROXY="http://jdoe:mypassword@proxy.motherfudgingproxies.com:3128"
 
 #### Service
 
-First make the directory (if it doesn't exist), and create the `http-proxy.conf` file:
+First, make the directory (if it doesn't exist), and create the `http-proxy.conf` file:
 
 ```sh
 mkdir /etc/systemd/system/docker.service.d
